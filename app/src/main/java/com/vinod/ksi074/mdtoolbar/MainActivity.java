@@ -1,4 +1,4 @@
-package com.example.ksi074.mdtoolbar;
+package com.vinod.ksi074.mdtoolbar;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override
@@ -34,6 +35,12 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "item " + item.getTitle(), Toast.LENGTH_LONG).show();
         } else if (id == R.id.item3) {
             Toast.makeText(this, "item " + item.getTitle(), Toast.LENGTH_LONG).show();
+        } else if (id == R.id.search) {
+            Toast.makeText(this, "search " + item.getTitle(), Toast.LENGTH_LONG).show();
+        } else if (id == R.id.cart) {
+            Toast.makeText(this, "cart " + item.getTitle(), Toast.LENGTH_LONG).show();
+        } else if (id == android.R.id.home) {
+            finish();
         }
         return super.onOptionsItemSelected(item);
     }

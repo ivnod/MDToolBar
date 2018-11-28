@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.ksi074.mdtoolbar">
+    package="com.vinod.ksi074.mdtoolbar">
 
     <application
         android:allowBackup="true"
